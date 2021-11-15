@@ -32,7 +32,7 @@ public:
 
 
     /*overloading = to set a temporary objects attributes(numerator
-     * and denominator to the original object VIA move constructor*/
+     * and denominator)*/
     Rational& operator=(const Rational&& rhs);
 
     /* add two objects, and create a new object with the result*/
@@ -47,24 +47,20 @@ public:
     /* divide two objects, and create a new object with the result*/
     Rational operator/(const Rational& rhs);
 
-    /*add two objects and move the result to the attributes of
-     * the LHS object
-     * Need to use move constructor*/
+    /*add two objects and move the result to the attributes of the 
+    LHS object*/
     Rational operator+=(const Rational& rhs);
 
     /*subtract two objects and move the result to the attributes of
-     * the LHS object
-     * Need to use move constructor*/
+     * the LHS object*/
     Rational operator-=(const Rational& rhs);
 
     /*multiply two objects and move the result to the attributes of
-     * the LHS object
-     * Need to use move constructor*/
+     * the LHS object*/
     Rational operator*=(const Rational& rhs);
 
     /*divide two objects and move the result to the attributes of
-     * the LHS object
-     * Need to use move constructor*/
+     * the LHS object*/
     Rational operator/=(const Rational& rhs);
 
     /* overload the output stream operator, so you can cout
